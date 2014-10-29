@@ -16,15 +16,21 @@ We had been thinking about developing a **'how to use APIs'** primarily using **
 
 The latter could be something like
 
-*It has been established that the growing availability of well curated and open digitized datasets can be tranformative for research progress in many domains. However, many researchers still lack the skills to most effectively utilize these datasets from both a data handling and analysis perspective. Data must be accessed from data repositories and large scale analyses conducted with command line tools or programming languages such as Python or R. Data Carpentry workshops aim to teach these concepts, skills and tools for working more effectively with data to researchers, particularly those with little prior computational experience. In this workshop, we will focus on how to use APIs to access data from the web and conduct initial analyses of the data in R. Researchers should come to this workshop if they are interested in learning more about using APIs and R for accessing and working with data or if they are interested in learning more about Data Carpentry workshops to see if they would be useful for researchers they work with in their communities.*
+*It has been established that the growing availability of well curated and publicly-available digitized datasets can be tranformative for research progress in many domains. However, many researchers still lack the skills to most effectively use these datasets from both a data handling and analysis perspective. Data must be accessed from data repositories and large scale analyses conducted with command line tools or programming languages such as Python or R. Data Carpentry workshops aim to teach these concepts, skills and tools for working more effectively with data to researchers, particularly those with little prior computational experience. In this workshop, we will conduct an introductory hands-on lesson for using R and ROpenSci packages to access data from the web through APIs. We will follow this with a discussion of the lesson and the effectiveness of the materials and approach and finally conduct collaborative lesson development/improvement through github. This workshop is for anyone interested in learning more about using APIs and R for accessing and working with data or if they are interested in learning more about Data Carpentry workshops to see if they would be useful for researchers they work with in their communities.*
 
 
 ###Draft agenda:
 (full-day workshop)
 
+
+
 Introduction  
 
-We have a tiny-tiny v simple module-DC lesson (Krathik's help inevitable) showing how to get some data using ROpenSci API. The first part of the workshop would me teaching them (2 hrs?) in DC style how to do it. So they see how we teach DC. 
+Morning (2 hours)
+
+Using R and ROpenSci to access and analyze data from the web through APIs
+
+This module is an introductory hands-on R lesson on getting and using data from the web using ROpenSci packages. We will work in R to access data from an online data repository and conduct preliminary analyses. Focus will also be on how this workflow enables reproducible research. 
 
 Coffee break
 
