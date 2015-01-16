@@ -1,0 +1,177 @@
+%\documentclass[practice]{ijdc-v9}
+\documentclass[15]{idcc}
+
+
+\title[Data Carpentry]{Data Carpentry: \\workshops to increase data literacy for researchers}
+\author{Tracy~K.~Teal}
+\affil{Michigan State University, East Lansing, MI, USA}
+\author{Karen~A.~Cranston}
+\affil{National Evolutionary Synthesis Center (NESCent), Durham, NC, USA}
+\author{Hilmar~Lapp}
+\affil{National Evolutionary Synthesis Center (NESCent), Durham, NC, USA}
+\author{Ethan~White}
+\affil{Utah State University, Logan, UT, USA}
+\author{Greg Wilson}
+\affil{Software Carpentry Foundation, Toronto, Canada}
+\author{Karthik Ram}
+\affil{Section of Evolution and Ecology, University of California, Davis, CA, USA}
+\author{Aleksandra Pawlik}
+\affil{University of Manchester, United Kingdom}
+\correspondence{Aleksandra Pawlik, Room 1.17 Kilburn Building, Oxford Road, University of Manchester, M13 9PL, Manchester, United Kingdom. Email: \email{aleksandra.pawlik@manchester.ac.uk} }
+
+
+\begin{document}
+
+\maketitle
+
+
+
+\section{Abstract}
+In many domains the rapid generation of large amounts of data is fundamentally changing how research is done. The deluge of data presents great opportunities, but also many challenges in managing, analyzing and sharing data. Good training resources for researchers looking to develop skills that will enable them to be more effective and productive researchers are scarce. To address this need we have developed an introductory two-day intensive workshop, Data Carpentry, designed to teach basic concepts, skills, and tools for working more effectively and reproducibly with data.\\
+
+Software Carpentry, two-day hands-on bootcamp style workshops teaching best practices in software development, have demonstrated the success of short workshops to teach foundational research skills. This model has been adapted for Data Carpentry with the objective of teaching skills to researchers to enable them to retrieve, view, manipulate, analyze and store their and other's data in an open and reproducible way, through the data lifecycle and be able to extract knowledge from data.\\
+
+\section{Introduction}
+
+With the increasing ability to digitize text and collections, automate data collection, conduct
+large scale surveys and generate vast genomic, astronomical or other type of raw data there is
+the great potential to conduct data-driven research and address questions in all fields that
+were not previously possible. However, despite this promise analysis of these datasets
+presents a major challenge. Most researchers lack the computational and statistical training
+required for appropriate data analysis, and often lack a working vocabulary to communicate their analysis
+needs to computer scientists or statisticians.
+
+This is especially concerning because it limits our ability to make progress on these important questions
+ or can even result in inaccurate or incomplete analyses can lead to erroneous interpretations. It also
+leads to the generation of data that ultimately cannot be used to answer research questions, wasting
+or underutilizing available resources.
+
+Most researchers want to improve the way they manage and analyze data, but don't know where to start.  With
+few exceptions, they are unfamiliar with best practices and tools in the data lifecycle: most or all of what they know about data
+management, analysis, and sharing (including the development and use of analysis software) has been learned piecemeal, or not learned
+at all.
+
+Researchers know they need these skills and are actively looking to learn them. A survey of researchers in the National Science Foundation's BIO Centers revealed not only gaps in knowledge in data management and analysis, but also that researchers are frustrated with
+their current data workflows and know their research capacity is being limited by this lack of knowledge. In a Bioinformatics Resource Australia EMBL 2013 Community Survey Report the most emphatic outcome was the overwhelming demand for training\footnote{\url{http://braembl.org.au/news/braembl-community-survey-report-2013}}. More than 60\% of researchers surveyed said that their greatest need was additional training, compared to a meagre 5\% who need access to additional compute power.  While this survey is focused on biology and bioinformatics, the sentiment is shared by researchers in many domains and regions and has been clearly identified by ELIXIR-UK as well. Fundamentally this lack of skills and of confidence is limiting research progress.
+
+However, good training resources for researchers looking to develop these skills are scarce. Training in data and computing skills is still
+largely absent from undergraduate and graduate programs for biomedical researchers. Self-guided study such as online lessons,
+MOOCs and books are available, but there is a significant challenge in being able to discover relevant and high-quality
+ materials and for already busy researchers to commit their time and focus to these learning activities. The completion rate for MOOCs in particular is less than 10\% \url{http://www.katyjordan.com/MOOCproject.html}. Also training resources are often available in areas outside a resarcher's domain, so they have the added challenge of figuring out how to apply learned tools or approaches in the context of their research. Instead, most researchers
+learn what they know about programming and data management on their own or the information is passed down within a lab,
+and as a result are unfamiliar with the equivalent of good lab practices for data science.  The hidden costs this creates are significant:
+researchers spent weeks or months doing things that could be done in hours or days, do not know how trustworthy their results are, and
+are often unable to reproduce their own work, much less that of their colleagues.
+
+
+\section{The workshop model to meet training needs}
+
+There are many challenges in providing effective training in data skills to researchers. One particular challenge is
+the substantial variation in the training occurring at institutions. There are many reasons for this including: The curriculum
+is already full and there is not room to add specific courses or even lectures incorporating these topics. There are
+not researchers at a given institution who are able to teach these courses, either through a lack of knowledge
+or committments to other activities. Additionally researchers are time-challenged. Existing committments to research, grants and service often leave little time to develop new skills, particularly not the time to figure out how to learn these new skills. Finally
+there is not currently a good model for community lesson development, so materials are often developed independently at
+each institution or department and there is not the opportunity for community engagement on what would be best taught or
+refinement as the lessons are taught multiple times.
+Ideally training would
+be high quality with materials vetted by practiced instruction, consistent across universities and locations, be able
+to be deployed at multiple and disparate locations, allow researchers to interact with the materials and the
+instructors and provide a relatively easy entry in to learning new topics.
+
+A hands-on workshop model with community developed lessons is one that addresses these needs. A set of materials can be developed by the community that can share perspectives on best practices and taught broadly. This not only develops a more effective lesson, but
+because the same lessons are being taught multiple times there are opportunities for feedback and refinement of the lessons to deliver a higher quality product. The short, focused time of workshops gives researchers committed time to work on developing these skill
+sets. The hands on nature gives researchers the chance to develop their computational skills in the course of the workshop, so they
+leave with practical examples and hands on experience. Finally workshops can be taught be instructors from outside a given institution, so the institution does not have to rely on local knowledge or availability of instructors.
+
+Software Carpentry has been a leader in this approach to teaching best practices and computational skills to researchers. It was created in 1998 as two-day
+intensive hands-on workshops to teach software practices fundamental to repeatability and accountability in scientific software
+development as well as strategies to be more effective and productive - version control, programming, software testing and the command
+line - enabling researchers to develop scripts or software that can reduce the time that things can be done from days and weeks to hours
+or days.
+
+All lessons are developed
+collaboratively with the community, and as with open source software, anyone can propose an improvement to its lessons (which are all
+freely available under a Creative Commons license).  Those proposals are reviewed, improved, and finally merged into the core so that
+everyone can benefit from better explanations, examples, and exercises. All workshops are taught by volunteer instructors, more than 80
+of which have been trained in the past year. Since 2010 alone, Software Carpenty has grown into a volunteer organization through which more than 160 instructors have
+taught two-day workshops for over 7000 people in 15 countries.
+
+Workshops do scale more effectively than courses, but the in person aspect of workshops and requiring that there are instructors
+ for each workshop does limit its scaling. The demand for Software Carpentry workshops seems to be limitless:  workshops
+fill within hours of being announced and more universities are requesting workshops than there are instructors available.
+
+\section{Data Carpentry workshops to train researchers in data skills}
+
+In 2014 a need to develop training to include introductory data analysis and management skills was identified through a survey of the
+NSF BIO Centers. Given the effectiveness of the workshop model and the proven success of Software Carpentry,
+Data Carpentry workshops were developed to meet these needs and focus on standard steps in the data workflow - organizing, managing and analyzing data
+in a more efficient and reproducible way. Additionally, because people learn best when new skills are building on
+an existing framework, Data Carpentry workshops are designed to be domain specific so learners can see more
+immediately how to implement these skills and approaches in their own research.
+
+We are doing this by starting with core workshops that 1) are aimed at researchers with little to no
+prior computational experience and 2) have domain specific content to demonstrate
+the direct application of the skills being taught to leaners research.
+
+
+To attain this objective, we identified the following teaching subjects.
+\begin{itemize}
+\item How to use spreadsheet programs (such as Excel) more effectively, and the limitations of such programs.
+\item Getting data out of spreadsheets and into more powerful tools --- using R or Python.
+\item Using databases, including managing and querying data in SQL.
+\item Workflows and automating repetitive tasks, in particular using the command line shell and shell scripts.
+\end{itemize}
+
+In addition to the above subjects, the following skills emerged as particularly important to impart from our discussions about designing the course:
+\begin{itemize}
+\item Preparing data for analysis.
+\item Using data and computational resources, in particular publicly available ones such as Amazon Web Services
+\item Conducting data and computation-heavy research more reproducibly and openly.
+\end{itemize}
+
+Additionally, criteria has been developed to make the training most effective for researchers new to data management and analysis practices, based on research on how people
+learn best and experience through Software Carpentry workshops.
+
+\begin{itemize}
+\item Workshops are domain specific. Each field has its own data types, analysis packages and standard problems to address. Being able to teach people in their domain let\'s them both more immediately understand the questions and approaches, and then be able to apply it to their own work. Using examples that are 'real world' to a given domain is fundamentally motivating for the skills that are being taught.
+
+\item Workshops are a narrative that show the data lifecycle for a given dataset or problem. All components of the data lifecycle are fundamental in the quality of the final analysis. Emphasizing all the components from setting up data tables, to viewing, manipulating, analyzing, visualizing and sharing data is crucial for accurate outcomes and reproducible research. Also, this lifecycle again models a users' workflow, allowing learners to put the process in to action with their own data sets.
+
+\item Workshops are designed for people with no prior computational experience. Learners can walk in with any level of background, but these workshops assume no prior knowledge. In this way learners should not self-select whether or not they should attend, and there is clear expectation for the pace of instruction. We also can meet researchers where they are and build on existing practices and knowledge.
+
+\item These workshops can be focused on any research domain, not just science. Social scientists, digital humanists, librarians, and museum collections are also facing the same challenges with the digital data deluge. The same principles in the data lifecycle can be applied in any domain of research and materials adapted to meet the specific needs of that domain.
+
+
+
+\section{Progress}
+
+First set of lessons NSF BIO. Have lessons, have taught, are teaching more.
+
+Developing genomics lessons
+
+Momentum to develop social sciences lessons, geoscience and neuroscience lessons.
+
+From the SWC there has been a lot of interest from librarians in these skills as well
+
+
+
+\section{Assessment}
+
+A need to incorporate assessment and what we're doing on that front
+
+
+
+\section{Building a community of instructors}
+
+Running an effective workshop means having instructors trained in how to teach, particularly in a workshop format. Software Carpentry has developed an effective train-the-trainers program based on pedagogy and experience. Data Carpentry instructors will also be trained in this way with Data Carpentry specific modules developed.
+
+\section{Conclusion}
+
+
+Four Data Carpentry workshops in biology have now been taught with positive response and survey assessment results demonstrating that learning objectives are being met. The research community has been enthusiastic about hosting, teaching or taking these workshops as well as been engaged in the development of materials in other domains and in expanding topics. Work is already progressing on materials for genomics, neuroscience, social science and geoscience and is expanding to include lessons on data visualization and introductory statistics.
+
+Data Carpentry workshops won't be able to teach researchers all the skills they need in two days, but we've shown that they are a way to get the process started and that they can lower the activation energy required for researchers to be able to do more and more effective work with their data and enable research progress.
+
+
+\end{document}.
